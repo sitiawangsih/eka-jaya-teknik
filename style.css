@@ -50,3 +50,16 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+/* Styling Tambahan untuk Galeri AC */
+.ac-gallery-more {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  grid-column: 1 / -1;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.gallery .gallery-item {
+  transition: all 0.3s ease;
+}
