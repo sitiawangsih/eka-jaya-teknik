@@ -12,8 +12,95 @@
 <article class="card"><div class="icon electric">⚡</div><h2>Instalasi Listrik</h2><p>Pemasangan dan perbaikan instalasi listrik.</p></article>
 <article class="card"><div class="icon tools">⚒</div><h2>Servis Elektronik</h2><p>Kulkas, dispenser, pompa air, dan peralatan lainnya.</p></article></div></div></section>
 <section id="sparepart" class="section dark"><div class="wrap"><div class="section-head light"><span class="eyebrow yellow">SPAREPART</span><h2>Kebutuhan teknik & listrik</h2><p>Tanyakan ketersediaan barang sebelum datang ke toko.</p></div><div class="parts"><span>Sparepart AC</span><span>Sparepart Mesin Cuci</span><span>Sparepart TV</span><span>Elektrikal / Listrik</span><span>Kabel</span><span>Saklar</span><span>Stop Kontak</span><span>Lampu LED & Fitting</span></div></div></section>
-<section id="galeri" class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">HASIL PENGERJAAN</span><h2>Contoh pekerjaan</h2><p>Foto pengerjaan bisa ditambahkan di bagian ini.</p></div><div class="gallery">
-<div class="gallery-item ac-gallery" onclick="toggleACGallery()">
+<section id="galeri" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">HASIL PENGERJAAN</span>
+      <h2>Contoh pekerjaan</h2>
+      <p>Klik salah satu kategori untuk melihat foto pengerjaan.</p>
+    </div>
+
+    <div class="gallery">
+
+      <!-- 1. KARTU UTAMA SERVIS AC (Cuma 1 di tampilan depan) -->
+      <div class="gallery-item ac-gallery" onclick="toggleACGallery()">
+        <img src="ac1.jpg" alt="Servis AC">
+        <div class="gallery-label">
+          <b>Servis AC</b>
+          <span>Klik untuk melihat hasil pengerjaan</span>
+        </div>
+      </div>
+
+      <!-- FOTO AC LAINNYA (Tersimpan di dalam, baru muncul saat Servis AC diklik) -->
+      <div id="acGalleryMore" class="ac-gallery-more" style="display: none;">
+        <div class="gallery-item">
+          <img src="ac2.jfif" alt="Pengerjaan Servis AC 2">
+          <div class="gallery-label">
+            <b>Servis AC</b>
+            <span>Contoh hasil pengerjaan 2</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="ac3.jfif" alt="Pengerjaan Servis AC 3">
+          <div class="gallery-label">
+            <b>Servis AC</b>
+            <span>Contoh hasil pengerjaan 3</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="ac4.jfif" alt="Pengerjaan Servis AC 4">
+          <div class="gallery-label">
+            <b>Servis AC</b>
+            <span>Contoh hasil pengerjaan 4</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. SERVIS TV -->
+      <div class="gallery-item">
+        <img src="assets/foto/tv/tv-1.jpg" alt="Pengerjaan Servis TV" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="placeholder" style="display:none">Foto<br><b>Servis TV</b></div>
+        <div class="gallery-label">
+          <b>Servis TV</b>
+          <span>Contoh hasil pengerjaan</span>
+        </div>
+      </div>
+
+      <!-- 3. INSTALASI LISTRIK -->
+      <div class="gallery-item">
+        <img src="assets/foto/listrik/listrik-1.jpg" alt="Pengerjaan Instalasi Listrik" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="placeholder" style="display:none">Foto<br><b>Instalasi Listrik</b></div>
+        <div class="gallery-label">
+          <b>Instalasi Listrik</b>
+          <span>Contoh hasil pengerjaan</span>
+        </div>
+      </div>
+
+      <!-- 4. SERVIS KULKAS -->
+      <div class="gallery-item">
+        <img src="assets/foto/kulkas/kulkas-1.jpg" alt="Pengerjaan Servis Kulkas" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="placeholder" style="display:none">Foto<br><b>Servis Kulkas</b></div>
+        <div class="gallery-label">
+          <b>Servis Kulkas</b>
+          <span>Contoh hasil pengerjaan</span>
+        </div>
+      </div>
+
+      <!-- 5. SERVIS LAINNYA -->
+      <div class="gallery-item">
+        <img src="assets/foto/lainnya/lainnya-1.jpg" alt="Pengerjaan Servis Lainnya" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="placeholder" style="display:none">Foto<br><b>Servis Lainnya</b></div>
+        <div class="gallery-label">
+          <b>Servis Lainnya</b>
+          <span>Contoh hasil pengerjaan</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><div class="gallery-item ac-gallery" onclick="toggleACGallery()">
 
     <!-- FOTO UTAMA -->
     <img src="ac1.jpg" alt="Servis AC">
