@@ -19,3 +19,23 @@ function toggleACGallery() {
     });
   }
 }
+function toggleTVGallery() {
+  const tvMore = document.getElementById('tvGalleryMore');
+  const allGalleryItems = document.querySelectorAll('.gallery > .gallery-item');
+
+  if (tvMore.style.display === 'none' || tvMore.style.display === '') {
+    tvMore.style.display = 'grid';
+
+    allGalleryItems.forEach(item => {
+      if (!item.classList.contains('tv-gallery')) {
+        item.style.display = 'none';
+      }
+    });
+  } else {
+    tvMore.style.display = 'none';
+
+    allGalleryItems.forEach(item => {
+      item.style.display = 'block';
+    });
+  }
+}
